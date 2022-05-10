@@ -1,0 +1,50 @@
+.container {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 20px 25px;
+  overflow: hidden;
+}
+.user__header {
+  margin-left: 30px;
+}
+.table {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user__table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  padding: 20px;
+  font-size: 14px;
+  min-width: 400px;
+  border: 1px lightgray solid;
+}
+.user__table > thead > tr {
+  text-align: left;
+  font-weight: bold;
+}
+.user__table th,
+.user__table td {
+  padding: 12px 20px;
+  min-width: 120px;
+  border-right: 1px darkgray dotted;
+}
+.user__table tbody tr:nth-of-type(odd) {
+  background-color: lightgray;
+}
+.user__table tbody tr td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.edit__btn,
+.delete__btn {
+  transition: all 0.3s ease-in-out;
+}
+.edit__btn:hover,
+.delete__btn:hover {
+  transform: scale(1.2);
+}

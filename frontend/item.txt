@@ -1,0 +1,27 @@
+import React from "react";
+import product from "../product";
+import classes from "./item.module.css";
+import { Link } from "react-router-dom";
+
+const item = ({ id }) => {
+  const item = product.find((el) => id === el._id);
+  return (
+    <div className={classes.container}>
+      <Link className="btn light" to="/">
+        Go Back
+      </Link>
+      <h1>Helloooo</h1>
+      <h1>{item.name}</h1>
+    </div>
+  );
+};
+
+export default item;
+
+
+
+  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Admin</th>
+                  <th></th>

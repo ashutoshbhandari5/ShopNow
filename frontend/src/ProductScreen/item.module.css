@@ -1,0 +1,124 @@
+.Container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 50px 0;
+}
+.btn__back {
+  margin: 10px 20px;
+  text-decoration: none;
+  background-color: #d3d3d3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn__back:hover {
+  background: darkgray;
+}
+
+.product {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.productImage {
+  object-fit: contain;
+  height: 520px;
+  width: 500px;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px 10px;
+  width: 250px;
+  /* height: 450px; */
+  background-color: rgb(226, 118, 72);
+  border-radius: 5px;
+  line-height: 1.7;
+  color: white;
+}
+
+.rating {
+  padding: 12px 0;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+
+.border {
+  margin-top: -5px;
+  height: 2px;
+  width: 197px;
+  background-color: lightgray;
+}
+.productDescription {
+  font-size: 14px;
+  color: white;
+  border-radius: 10px;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addToCartBtn {
+  padding: 8px 20px;
+  background-color: #ffdf32;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s;
+}
+.addToCartBtn:hover {
+  background-color: gold;
+}
+.addToCart {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid lightgray;
+  transition: all 0.3s;
+}
+.addToCart:hover {
+  transform: scale(1.1);
+}
+.addToCart > div:nth-of-type(1),
+.addToCart > div:nth-of-type(2) {
+  border-bottom: 2px solid lightgray;
+}
+.drop__down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin-top: 10px;
+}
+.select__option {
+  width: 70px;
+  height: 30px;
+  color: #d3d3d3;
+  background: coral;
+  border-radius: 5px;
+}
+.select__option:focus {
+  outline: none;
+}
+.select__option > option {
+  border-radius: 5px;
+}

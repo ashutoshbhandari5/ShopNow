@@ -1,0 +1,49 @@
+.homeScreen {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-gap: 15px;
+}
+.Container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+.mainTitle {
+  margin-left: 20px;
+}
+.eachProduct {
+  transition: box-shadow 0.3s;
+  height: 320px;
+  width: 200px;
+}
+.productImage {
+  object-fit: contain;
+  height: 180px;
+  width: 200px;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.eachProduct {
+  border: solid gainsboro 1px;
+  padding: 10px 20px;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+}
+.eachProduct:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.productTitle {
+  transition: all 0.3s;
+  color: #223039;
+}
+.productTitle:hover {
+  color: black;
+}
